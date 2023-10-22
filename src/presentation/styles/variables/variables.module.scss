@@ -1,0 +1,55 @@
+/* Cores da aplicação */
+$primary-color: #f3f3f3;
+$secondary-color: #e3e3e3;
+$tertiary-color: #d3d3d3;
+$bg-primary-color: #152535;
+$bg-secondary-color: #253545;
+$bg-tertiary-color: #354555;
+$accent-color: #ff9933;
+$success-color: #33ff99;
+$error-color: #ffaaff;
+
+/* Cores dos gráficos */
+$chart-color-one: #ff2233;
+$chart-color-two: #ffff22;
+$chart-color-three: #ff22ff;
+$chart-color-four: #222fff;
+$chart-color-five: #22ffff;
+$chart-color-six: #22ff88;
+$chart-color-seven: #5566ff;
+
+
+/* Tamanhos de fonte */
+$font-size-small: 0.75rem;
+$font-size-medium: 1rem;
+$font-size-large: 1.25rem;
+
+/* Espaçamentos */
+$spacing-small: 0.5rem;
+$spacing-medium: 1rem;
+$spacing-large: 1.5rem;
+
+:export {
+	colors: {
+		bg: {
+			primary: $bg-primary-color;
+			secondary: $bg-secondary-color;
+			tertiary: $bg-tertiary-color;
+		};
+		chart: {
+			one: $chart-color-one;
+			two: $chart-color-two;
+			three: $chart-color-three;
+			four: $chart-color-four;
+			five: $chart-color-five;
+			six: $chart-color-six;
+			seven: $chart-color-seven;
+		}
+		primary: $primary-color;
+		secondary: $secondary-color;
+		tertiary: $tertiary-color;
+		accent: $accent-color;
+		error: $error-color;
+		success: $success-color;
+	}
+}
