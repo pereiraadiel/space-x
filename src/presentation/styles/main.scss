@@ -6,6 +6,9 @@
 @import 'components/atoms/text';
 @import 'components/atoms/statusLabel';
 @import 'components/molecules/searchInput';
+@import 'components/organisms/footer';
+@import 'components/organisms/header';
+@import 'components/organisms/searchBar';
 
 html {
 	font-size: 16px;

@@ -1,0 +1,11 @@
+form.search-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	width: 100%;
+	> button {
+		max-width: 6rem;
+		margin-top: 0;
+	}
+}
