@@ -1,0 +1,15 @@
+.icon {
+	width: 3rem;
+	height: 3rem;
+	background-color: $bg-tertiary-color;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: $spacing-small 0;
+	border-radius: $border-radius-min;
+	> svg {
+		width: 1.5rem;
+		height: 1.5rem;
+		color: $accent-color;
+	}
+}

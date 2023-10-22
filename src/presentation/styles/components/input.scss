@@ -1,0 +1,10 @@
+input {
+	border: none;
+	padding: 1rem;
+	width: calc(100% - 2rem);
+	border-radius: $border-radius-min;
+	background-color: $bg-tertiary-color;
+	font-size: $font-size-medium;
+	font-weight: 500;
+	color: $primary-color;
+}

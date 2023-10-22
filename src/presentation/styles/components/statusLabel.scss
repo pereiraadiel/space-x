@@ -1,0 +1,16 @@
+p.status-label {
+	padding: 0.5rem;
+	width: 3rem;
+	text-align: center;
+	background-color: none;
+	color: $alt-color;
+	border-radius: $border-radius-min;
+	
+	&.success {
+		background-color: $success-color;
+	}
+	
+	&.fail {
+		background-color: $error-color;
+	}
+}

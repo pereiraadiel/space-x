@@ -1,0 +1,19 @@
+h1, h2, p {
+	color: $primary-color;
+	width: 100%;
+}
+
+h1 {
+	font-size: $font-size-large;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: $font-size-medium;
+	font-weight: 600;
+}
+
+p {
+	font-size: $font-size-small;
+	font-weight: 500;
+}

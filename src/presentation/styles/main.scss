@@ -1,8 +1,14 @@
-html {
-	font-size: 16px;
-}
-
 @import 'variables/variables.module';
 @import 'fonts';
-@import 'components/button';
+@import './components/button';
 @import 'components/input';
+@import 'components/icon';
+@import 'components/text';
+@import 'components/statusLabel';
+
+html {
+	font-size: 16px;
+	background-color: $bg-primary-color;
+	color: $primary-color;
+}
+

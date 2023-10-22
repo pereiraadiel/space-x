@@ -1,0 +1,17 @@
+button {
+	border: none;
+	width: 100%;
+	padding: 1rem;
+	margin-top: $spacing-small;
+	border-radius: $border-radius-min;
+	background-color: $accent-color;
+	color: $primary-color;
+	font-size: $font-size-medium;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	&:hover {
+		opacity: 0.9;
+		cursor: pointer;
+	}
+}
