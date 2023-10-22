@@ -1,0 +1,16 @@
+.search {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	position: relative;
+	> .icon {
+		position: absolute;
+		top: -4px;
+		left: 0;
+	}
+	> input {
+		padding-left: 4rem;
+		flex: 1;
+	}
+
+}

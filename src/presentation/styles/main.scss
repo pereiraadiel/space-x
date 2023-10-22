@@ -1,10 +1,11 @@
 @import 'variables/variables.module';
 @import 'fonts';
-@import './components/button';
-@import 'components/input';
-@import 'components/icon';
-@import 'components/text';
-@import 'components/statusLabel';
+@import 'components/atoms/button';
+@import 'components/atoms/input';
+@import 'components/atoms/icon';
+@import 'components/atoms/text';
+@import 'components/atoms/statusLabel';
+@import 'components/molecules/searchInput';
 
 html {
 	font-size: 16px;
