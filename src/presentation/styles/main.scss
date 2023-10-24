@@ -6,9 +6,12 @@
 @import 'components/atoms/text';
 @import 'components/atoms/statusLabel';
 @import 'components/molecules/searchInput';
+@import 'components/molecules/stackedBarChart';
+@import 'components/molecules/pieChart';
 @import 'components/organisms/footer';
 @import 'components/organisms/header';
 @import 'components/organisms/searchBar';
+@import 'components/organisms/chartWrapper';
 @import 'components/templates/mainLayout';
 
 html {

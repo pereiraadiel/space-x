@@ -5,7 +5,14 @@ form.search-bar {
 	gap: 1rem;
 	width: 100%;
 	> button {
+		display: none;
 		max-width: 6rem;
 		margin-top: 0;
+	}
+
+	@media screen and (min-width: 480px) {
+		> button {
+			display: block;
+		}
 	}
 }

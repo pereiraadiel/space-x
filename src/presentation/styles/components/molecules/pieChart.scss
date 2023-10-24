@@ -1,0 +1,42 @@
+.pie-chart {
+	width: 100%;
+	max-width: 35rem;
+	height: 32rem;
+	background-color: $bg-secondary-color;
+	padding: 1rem;
+	border-radius: $border-radius-min;
+	text-align: center;
+
+	> p {
+		margin-bottom: 0;
+		font-weight: 600;
+	}
+	> .status-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: left;
+		flex-wrap: wrap;
+		width: 100%;
+		gap: 1rem;
+		margin-top: 0;
+		
+		> .status {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 0.5rem;
+			width: 100%;
+			max-width: 10rem;
+			padding: 0.25rem 0.5rem;
+			margin-top: 0.5rem;
+			background-color: $bg-tertiary-color;
+			border-radius: $border-radius-min;
+			> p {
+				width: 4rem;
+				padding: 0.5rem;
+			}
+		}
+	}
+
+}
