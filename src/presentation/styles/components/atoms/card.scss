@@ -1,0 +1,45 @@
+.card {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 1rem;
+	width: 100%;
+	background-color: $bg-secondary-color;
+	margin-top: 0.5rem;
+	padding: 0.5rem 0;
+
+	@media screen and (min-width: 480px) {
+		display: none;
+	}
+
+	> .left, .info, .right {
+		display: flex;
+		flex-direction: column;
+		margin: 0 0.5rem;
+		> p {
+			margin: 0.25rem 0 0 0;
+		}
+	}
+
+	> .left {
+		> img {
+			width: 3rem;
+			height: 3rem;
+			margin-bottom: 1rem;
+		}
+	}
+
+	> .info {
+		text-align: left;
+		flex: 1;
+		& :nth-child(1) {
+			margin-bottom: 1rem;
+		}
+	}
+
+	.right {
+		> a, >a>img {
+			margin: 0;
+		}
+	}
+}

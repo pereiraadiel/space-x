@@ -1,0 +1,26 @@
+td, th {
+	width: 100%;
+	min-width: 8rem;
+	max-width: 10rem;
+	padding: 0.5rem;
+}
+
+th {
+	background-color: $accent-color;
+	color: $alt-color;
+}
+
+td {
+	> * {
+		margin: 0 auto
+	}
+
+	> img, a>img {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+	> a {
+		text-decoration: none;
+		color: $primary-color;
+	}
+}

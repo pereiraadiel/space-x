@@ -1,0 +1,20 @@
+table {
+	width: 100%;
+	background-color: $bg-secondary-color;
+	margin-top: 1rem;
+	display: none;
+	@media screen and (min-width: 480px) {
+		display: block;
+	}
+	> tbody.table-body {
+		border: 1px solid blue;
+		& :nth-child(odd) tr {
+			background-color: $bg-tertiary-color;
+		 }
+	
+		& :nth-child(even) tr {
+			background-color: transparent;
+			border: 1px solid red;
+		 }
+	}
+}

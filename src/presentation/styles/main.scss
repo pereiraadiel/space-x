@@ -4,14 +4,19 @@
 @import 'components/atoms/input';
 @import 'components/atoms/icon';
 @import 'components/atoms/text';
+@import 'components/atoms/card';
 @import 'components/atoms/statusLabel';
+@import 'components/atoms/tableCell';
+@import 'components/atoms/pagination';
 @import 'components/molecules/searchInput';
 @import 'components/molecules/stackedBarChart';
 @import 'components/molecules/pieChart';
+@import 'components/molecules/tableRow';
 @import 'components/organisms/footer';
 @import 'components/organisms/header';
 @import 'components/organisms/searchBar';
 @import 'components/organisms/chartWrapper';
+@import 'components/organisms/table';
 @import 'components/templates/mainLayout';
 
 html {

@@ -1,7 +1,11 @@
 .chart-wrapper {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	gap: 1rem;
 	flex-wrap: wrap;
+	
+	@media screen and (max-width: 480px) {
+		justify-content: space-between;
+	}
 }
