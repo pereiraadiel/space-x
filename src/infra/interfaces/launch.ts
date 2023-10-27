@@ -3,8 +3,9 @@ export interface Launch {
   success: boolean;
   youtubeId: string;
   name: string;
+  logoUrl: string;
   flightNumber: number;
-  date: Date;
+  dateUtc: Date;
   rocket: {
     id: string;
     name: string;

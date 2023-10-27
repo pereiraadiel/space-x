@@ -1,8 +1,6 @@
-export interface RocketsResponse {
-	rockets: Rocket[]
-}
+export type RocketsResponse = Rocket[];
 
 export interface Rocket {
-	id: string;
-	name: string;
+  id: string;
+  name: string;
 }

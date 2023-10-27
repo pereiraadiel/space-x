@@ -4,16 +4,22 @@ import { Rocket } from "../interfaces/rocket";
 
 const useRocket = () => {
   const [rockets, setRockets] = useState<Rocket[]>([]);
-  const { getRockets } = useApi();
+  const { getRockets: getApiRockets } = useApi();
 
-  useEffect(() => {
-    getRockets().then((response) => {
-      setRockets(response.rockets);
-    });
-  }, [getRockets, setRockets]);
+  const getRockets = () => {
+    getApiRockets()
+      .then((response) => {
+        if (response) {
+          console.warn('response' ,response);
+          setRockets(response);
+        }
+      })
+      .catch((e) => console.error(e.status));
+  };
 
   return {
     rockets,
+    getRockets,
   };
 };
 

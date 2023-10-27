@@ -1,0 +1,42 @@
+.select-filter {
+	width: 100%;
+	max-width: 10rem;
+	background-color: $bg-secondary-color;
+	border-radius: $border-radius-min;
+	padding: 0.5rem;
+
+	> .select {
+		background-color: $bg-tertiary-color;
+		padding: 0.5rem;
+		border-radius: $border-radius-min;
+
+		&.open {
+			background-color: $bg-secondary-color;
+		}
+	}
+
+	> .options {
+		display: none;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		text-align: center;
+		padding: 0;
+		&.open {
+			display: flex;
+			position: absolute;
+			background-color: $bg-secondary-color;
+			top: 2.5rem;
+			width: 10rem;
+		}
+
+		> li {
+			list-style: none;
+			width: 100%;
+			padding: 0.5rem 0;
+			background-color: $bg-tertiary-color;
+			margin-top: 0.25rem;
+			border-radius: $border-radius-min;
+		}
+	}
+}

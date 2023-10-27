@@ -6,6 +6,7 @@
 @import 'components/atoms/text';
 @import 'components/atoms/card';
 @import 'components/atoms/statusLabel';
+@import 'components/atoms/selectFilter';
 @import 'components/atoms/tableCell';
 @import 'components/atoms/pagination';
 @import 'components/molecules/searchInput';
@@ -15,6 +16,7 @@
 @import 'components/organisms/footer';
 @import 'components/organisms/header';
 @import 'components/organisms/searchBar';
+@import 'components/organisms/filterBar';
 @import 'components/organisms/chartWrapper';
 @import 'components/organisms/table';
 @import 'components/templates/mainLayout';

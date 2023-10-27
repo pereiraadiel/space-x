@@ -12,7 +12,10 @@ type PieChartProps = {
 const PieChart: React.FC<PieChartProps> = ({ data, title }) => {
 	usePieChart(data, title);
   const { totalLaunches, totalLaunchesSuccess } = usePieChartStatistics(data);
-  const successPercentage = totalLaunchesSuccess / totalLaunches * 100;
+  const successPercentage = (totalLaunchesSuccess / totalLaunches * 100).toFixed(2);
+	const failPercentage = (100 - Number(successPercentage)).toFixed(2);
+
+	console.warn(data, title)
 		
 	return (
 		<>
@@ -26,7 +29,10 @@ const PieChart: React.FC<PieChartProps> = ({ data, title }) => {
 					</div>
 					<div className="status">
 						<StatusLabel status="fail"/>
-						<Text variant="paragraph" value={`${totalLaunches - totalLaunchesSuccess} (${100 - successPercentage}%)`}/>
+						<Text 
+							variant="paragraph" 
+							value={`${totalLaunches - totalLaunchesSuccess} (${failPercentage}%)`}
+						/>
 					</div>
 				</div>
 			</div>

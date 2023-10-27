@@ -15,7 +15,9 @@ const useLaunch = () => {
   const getLaunchesStats = () => {
     getLaunchesStatistics()
       .then((res) => {
-        setLaunchesStats(res.launchesByYear);
+        if (res) {
+          setLaunchesStats(res.launchesByYear);
+        }
       })
       .catch();
   };
@@ -23,7 +25,9 @@ const useLaunch = () => {
   const getLaunchesResponse = (request: LaunchesRequest) => {
     getLaunches(request)
       .then((res) => {
-        setLaunchesResponse(res);
+        if (res) {
+          setLaunchesResponse(res);
+        }
       })
       .catch();
   };

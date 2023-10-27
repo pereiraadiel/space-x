@@ -10,70 +10,33 @@ const api = axios.create({
 });
 
 const getLaunches = async (request: LaunchesRequest) => {
-  const response = await api.get<LaunchesResponse>("/launches", {
-    params: request,
-  });
-	response.data = {
-		hasNext: false,
-		hasPrev: false,
-		page: 1,
-		totalPages: 1,
-		totalDocs: 2,
-		results: [{
-			id: '123',
-			name: 'EFG',
-			date: new Date(),
-			success: true,
-			youtubeId: '',
-			rocket: '123'
-		},
-		{
-			id: '789',
-			name: 'ABC',
-			date: new Date(),
-			success: true,
-			youtubeId: '',
-			rocket: '456'
-		}] as any
-	}
-  return response.data;
+  try {
+    const response = await api.get<LaunchesResponse>("/launches", {
+      params: request,
+    });
+    return response.data;
+  } catch (error) {
+    console.error(error);
+  }
 };
 
 const getRockets = async () => {
   try {
     const response = await api.get<RocketsResponse>("/rockets");
-    response.data = {
-      rockets: [
-        {
-          id: "123",
-          name: "Rocket 1A",
-        },
-        {
-          id: "456",
-          name: "Rocket 2B",
-        },
-      ],
-    };
     return response.data;
   } catch (error) {
-    return {
-      rockets: [
-        {
-          id: "123",
-          name: "Rocket 1A",
-        },
-        {
-          id: "456",
-          name: "Rocket 2B",
-        },
-      ],
-    };
+    console.error(error);
   }
 };
 
 const getLaunchesStats = async () => {
-  const response = await api.get<LaunchesStatsResponse>("/launches/stats");
-  return response.data;
+  try {
+    const response = await api.get<LaunchesStatsResponse>("/launches/stats");
+    console.warn("response stats:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error(error);
+  }
 };
 
 const useApi = () => {

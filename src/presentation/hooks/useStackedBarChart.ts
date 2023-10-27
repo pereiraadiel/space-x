@@ -22,10 +22,10 @@ const useStackedBarChart = (
         color: Colors[index],
       },
       data: data.map((item) => {
-        const matchingRocket = item.rockets.find(
-          (rocket) => rocket.name === category
+        const matchingRocket = item.launches.find(
+          (entry) => entry.rocket === category
         );
-        return matchingRocket ? matchingRocket.count : 0;
+        return matchingRocket ? 1 : 0;
       }),
     }));
 
